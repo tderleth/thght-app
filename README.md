@@ -8,8 +8,8 @@
 
 ## Requirements
 
-- [Docker](https://www.docker.com/)
 - [Node.js](https://nodejs.org)
+- Xcode and xCode CLI
 
 ## Installation
 
@@ -19,17 +19,8 @@ npm install
 
 ## Usage
 
-### Development
-
-```
-$ cp .env.sample .env
-$ TBD
-```
-
-### Testing
-
 ```bash
-make test
+npm start
 ```
 
 ### Linting
