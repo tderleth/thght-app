@@ -1,0 +1,36 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "android": "expo start --android",
+    "eject": "expo eject",
+    "fix": "npm run lint -- --fix",
+    "ios": "expo start --ios",
+    "lint": "eslint '**/*.{ts,tsx}'",
+    "start": "expo start",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "^35.0.0",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native-web": "^0.11.7"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.57.65",
+    "@types/react": "^16.8.23",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "babel-preset-expo": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.6.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint": "^5.16.0",
+    "husky": "^3.1.0",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^2.0.0",
+    "typescript": "^3.7.3"
+  },
+  "private": true
+}
