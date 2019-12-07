@@ -9,7 +9,7 @@
 ## Requirements
 
 - [Node.js](https://nodejs.org)
-- Xcode and xCode CLI
+- [Xcode 11](https://developer.apple.com/xcode/) and Xcode CLI
 
 ## Installation
 
