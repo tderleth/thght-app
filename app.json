@@ -4,10 +4,7 @@
     "slug": "thght",
     "privacy": "public",
     "sdkVersion": "35.0.0",
-    "platforms": [
-      "android",
-      "ios"
-    ],
+    "platforms": ["android", "ios"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,11 +16,12 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
-    }
-  }
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "thght",
+  "name": "thght"
 }
