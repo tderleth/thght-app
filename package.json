@@ -24,41 +24,43 @@
   "devDependencies": {
     "@types/expo": "^33.0.1",
     "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.16",
+    "@types/react": "^16.9.15",
     "@types/react-native": "^0.57.65",
     "@types/react-test-renderer": "^16.9.1",
-    "@types/react": "^16.9.15",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "babel-preset-expo": "^7.1.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.6.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint": "^5.16.0",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.0",
     "ts-jest": "^24.2.0",
-    "tslint-config-airbnb": "^5.11.2",
     "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
     "typescript": "^3.7.3"
   },
   "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
     "preset": "react-native",
     "testEnvironment": "node",
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
-      "^.+\\.tsx?$": "ts-jest"
+      "^.+\\.(ts|tsx)$": "ts-jest"
     },
     "testMatch": [
       "**/__tests__/**/*.ts?(x)",
       "**/?(*.)+(spec|test).ts?(x)"
     ],
-    "moduleFileExtensions": [
-      "js",
-      "ts",
-      "tsx"
+    "testPathIgnorePatterns": [
+      "/node_modules/"
     ],
     "globals": {
       "ts-jest": {
