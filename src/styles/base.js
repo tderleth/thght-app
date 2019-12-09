@@ -11,10 +11,10 @@ export const colors = {
 };
 
 export const padding = {
-  xs: 4,
-  sm: 8,
-  md: 16,
-  lg: 24,
-  xl: 48,
-  xxl: 64,
+  xxs: 4,
+  xs: 8,
+  sm: 16,
+  md: 24,
+  lg: 48,
+  xl: 64,
 };
