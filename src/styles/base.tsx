@@ -10,6 +10,7 @@ export const colors = {
   ice: '#00DECC',
 };
 
+/* tslint:disable:object-literal-sort-keys */
 export const padding = {
   xxs: 4,
   xs: 8,
@@ -18,3 +19,4 @@ export const padding = {
   lg: 48,
   xl: 64,
 };
+/* tslint:enable:object-literal-sort-keys */
