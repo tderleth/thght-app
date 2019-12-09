@@ -6,8 +6,8 @@ export const dimensions = {
 };
 
 export const colors = {
-  ice: '#00DECC',
   eggplant: '#4634AC',
+  ice: '#00DECC',
 };
 
 export const padding = {
