@@ -1,10 +1,3 @@
-import { Dimensions } from 'react-native';
-
-export const dimensions = {
-  fullHeight: Dimensions.get('window').height,
-  fullWidth: Dimensions.get('window').width,
-};
-
 export const colors = {
   eggplant: '#4634AC',
   ice: '#00DECC',
