@@ -6,20 +6,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: tests
+    name: test
     steps:
       - uses: actions/checkout@master
-      - run: make test
-  coverage:
-    needs: [test]
-    name: coverage
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - run: npm install
-      - run: npm build
-      - uses: paambaati/codeclimate-action@v2.3.0
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        with:
-          coverageCommand: npm coverage
+      - run: make test-ci

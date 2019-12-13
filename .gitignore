@@ -15,3 +15,4 @@ web-report/
 
 # jest
 coverage/
+cc-test-reporter
