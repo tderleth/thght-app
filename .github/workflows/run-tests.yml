@@ -9,7 +9,7 @@ jobs:
     name: tests
     steps:
       - uses: actions/checkout@master
-      - run: make test-ci
+      - run: make test
   coverage:
     needs: [test]
     name: coverage
