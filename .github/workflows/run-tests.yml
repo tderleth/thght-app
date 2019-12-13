@@ -1,7 +1,7 @@
 on:
   push:
     branches-ignore:
-      - "master"
+      - 'master'
 
 jobs:
   test:
@@ -9,4 +9,17 @@ jobs:
     name: tests
     steps:
       - uses: actions/checkout@master
-      - run: make test
+      - run: make test-ci
+  coverage:
+    needs: [test]
+    name: coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: npm install
+      - run: npm build
+      - uses: paambaati/codeclimate-action@v2.3.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageCommand: npm coverage
