@@ -17,4 +17,4 @@ pre:
 	./cc-test-reporter before-build
 
 post:
-	CC_TEST_REPORTER_ID=0c4626a144c6fe4f3bcd9d05dbd5d8e38b811fa82d37cd245f16c5e4807523ae ./cc-test-reporter after-build --coverage-input-type lcov --debug --exit-code 0
+	CC_TEST_REPORTER_ID=0c4626a144c6fe4f3bcd9d05dbd5d8e38b811fa82d37cd245f16c5e4807523ae ./cc-test-reporter after-build --coverage-input-type lcov --exit-code 0
