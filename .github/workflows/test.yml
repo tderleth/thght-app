@@ -1,12 +1,12 @@
 on:
   push:
     branches-ignore:
-      - "master"
+      - 'master'
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: tests
+    name: test
     steps:
       - uses: actions/checkout@master
-      - run: make test
+      - run: make test-ci
