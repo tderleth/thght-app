@@ -154,7 +154,7 @@ export default class OnboardingScreens extends Component {
       <View pointerEvents="box-none" style={[styles.buttonWrapper, styles.fullScreen]}>
         {lastScreen ? (
           // TODO: Add a handler that would send a user to your app after onboarding is complete
-          <Button text="Start Now" onPress={() => console.log('Send me to the app')} />
+          <Button text="Create account" onPress={() => console.log('Send me to the app')} />
         ) : (
           <Button text="Continue" onPress={() => this.swipe()} />
         )}
