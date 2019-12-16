@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import Swiper from '../modules/onboarding/swiper';
-import { colors, padding } from '../styles/base';
+import Swiper from '../../components/swiper';
+import { colors, padding } from '../../styles/base';
 
 export default class Onboarding extends Component {
   render() {
@@ -21,7 +21,7 @@ export default class Onboarding extends Component {
           </Text>
           <Image
             style={{ width: 249, height: 95.77 }}
-            source={require('../../assets/logo_plain_white.png')}
+            source={require('../../../assets/logo_plain_white.png')}
           />
           <Text style={{ color: colors.ice, paddingTop: padding.md, paddingBottom: padding.xs }}>
             Minimalistic Journaling
