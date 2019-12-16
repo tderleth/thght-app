@@ -3,10 +3,14 @@ import { Dimensions, Platform, ScrollView, StyleSheet, View } from 'react-native
 import Button from '../../components/button';
 import { colors } from '../../styles/base';
 
+export interface Props {}
+
+interface State {}
+
 // Detect screen width and height
 const { width, height } = Dimensions.get('window');
 
-export default class OnboardingScreens extends Component {
+export default class OnboardingScreens extends Component<Props, State> {
   static defaultProps = {
     horizontal: true,
     pagingEnabled: true,
