@@ -4,6 +4,8 @@
     "import-name": [false],
     "no-console": false,
     "no-any": true,
+    "no-console": false,
+    "object-literal-sort-keys": false,
     "prefer-array-literal": [true, { "allow-type-parameters": true }],
     "variable-name": [
       true,

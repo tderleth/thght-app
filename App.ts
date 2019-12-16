@@ -1,3 +1,3 @@
-import App from './src/App';
+import Main from './src/views/main/index';
 
-export default App;
+export default Main;
