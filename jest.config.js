@@ -1,6 +1,6 @@
 module.exports = {
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
+  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/styles/**/*.{js,jsx,ts,tsx}'],
   coverageReporters: ['lcov'],
   preset: 'react-native',
   testEnvironment: 'node',

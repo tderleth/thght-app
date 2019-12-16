@@ -1,4 +1,3 @@
-/* tslint:disable:object-literal-sort-keys */
 export const colors = {
   white: '#fff',
   black: '#000',
@@ -17,4 +16,3 @@ export const padding = {
   lg: 48,
   xl: 64,
 };
-/* tslint:enable:object-literal-sort-keys */

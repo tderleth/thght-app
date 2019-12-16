@@ -1,4 +1,5 @@
-GIT_COMMIT=$(shell git rev-parse HEAD)
+GIT_COMMIT_SHA=$(shell git rev-parse HEAD)
+GIT_BRANCH=$(shell git rev-parse --abbrev-ref HEAD)
 
 build:
 	npm install
