@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Onboarding from '../onboarding';
 
 const styles = StyleSheet.create({
   hello: {
@@ -12,10 +13,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
-  <View style={styles.hello}>
-    <Text>thght</Text>
-  </View>
-);
+const Main = () => <Onboarding />;
 
 export default Main;
