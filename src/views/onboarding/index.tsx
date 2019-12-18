@@ -8,14 +8,14 @@ export default class Onboarding extends Component {
     return (
       <Swiper>
         {/* Welcome screen */}
-        <View style={[styles.slide, { backgroundColor: '#000' }]}>
+        <View style={[styles.slide, { backgroundColor: colors.black }]}>
           <Text
             style={{
               color: colors.white,
-              fontSize: 13,
-              paddingBottom: padding.sm,
+              fontSize: 12,
               letterSpacing: 4,
               textTransform: 'uppercase',
+              paddingBottom: padding.sm,
             }}
           >
             Welcome to
@@ -29,7 +29,8 @@ export default class Onboarding extends Component {
               color: colors.ice,
               paddingTop: padding.md,
               paddingBottom: padding.xs,
-              fontSize: 17,
+              fontSize: 16,
+              lineHeight: 20,
             }}
           >
             Minimalistic Journaling
@@ -39,7 +40,7 @@ export default class Onboarding extends Component {
           </Text>
         </View>
         {/* Rules screen */}
-        <View style={[styles.slide, { backgroundColor: '#000' }]}>
+        <View style={[styles.slide, { backgroundColor: colors.black }]}>
           <Text style={styles.h1}>
             <Text style={{ textDecorationLine: 'line-through' }}>Big effort</Text>
             {'\n'}Small wins &amp; consistency
@@ -67,20 +68,21 @@ const styles = StyleSheet.create({
   },
   // Header styles
   header: {
-    color: '#FFFFFF',
+    color: colors.white,
     fontSize: 42,
     fontWeight: 'bold',
     marginVertical: 15,
   },
   // Text below header
   text: {
-    color: '#FFFFFF',
-    fontSize: 17,
+    color: colors.white,
+    fontSize: 16,
+    lineHeight: 20,
     marginHorizontal: 40,
     textAlign: 'center',
   },
   h1: {
-    color: '#FFFFFF',
+    color: colors.white,
     fontSize: 42,
     fontWeight: '900',
     textAlign: 'center',

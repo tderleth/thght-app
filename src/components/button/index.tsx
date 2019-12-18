@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { colors } from '../../styles/base';
 
 export interface Props {
   text: string;
@@ -23,13 +24,13 @@ export default class Button extends Component<Props, State> {
 const styles = StyleSheet.create({
   button: {
     borderRadius: 50,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: colors.white,
     paddingHorizontal: 50,
     paddingVertical: 20,
     alignItems: 'center',
   },
   text: {
-    color: '#000',
+    color: colors.black,
     fontWeight: '500',
     fontSize: 16,
   },
