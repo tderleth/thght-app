@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, Platform, ScrollView, StyleSheet, View } from 'react-native';
 import Button from '../../components/button';
-import { colors } from '../../styles/base';
+import { colors, padding } from '../../styles/base';
 
 export interface Props {}
 
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
   // Pagination indicators
   pagination: {
     position: 'absolute',
-    bottom: 110,
+    bottom: 134,
     left: 0,
     right: 0,
     flex: 1,
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
     left: 0,
     flex: 1,
     paddingHorizontal: 10,
-    paddingVertical: 40,
+    paddingVertical: 64,
     justifyContent: 'flex-end',
     alignItems: 'center',
   },

@@ -15,4 +15,5 @@ export const padding = {
   md: 24,
   lg: 48,
   xl: 64,
+  xxl: 96,
 };

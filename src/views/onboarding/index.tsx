@@ -8,7 +8,7 @@ export default class Onboarding extends Component {
     return (
       <Swiper>
         {/* Welcome screen */}
-        <View style={[styles.slide, { backgroundColor: colors.black }]}>
+        <View style={[styles.slide, { backgroundColor: colors.black, paddingBottom: padding.xxl }]}>
           <Text
             style={{
               color: colors.white,
@@ -40,7 +40,7 @@ export default class Onboarding extends Component {
           </Text>
         </View>
         {/* Rules screen */}
-        <View style={[styles.slide, { backgroundColor: colors.black }]}>
+        <View style={[styles.slide, { backgroundColor: colors.black, paddingBottom: padding.xl }]}>
           <Text style={styles.h1}>
             <Text style={{ textDecorationLine: 'line-through' }}>Big effort</Text>
             {'\n'}Small wins &amp; consistency
