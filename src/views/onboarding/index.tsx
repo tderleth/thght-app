@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 import Swiper from '../../components/swiper';
 import { colors, padding } from '../../styles/base';
 
@@ -9,6 +9,10 @@ export default class Onboarding extends Component {
       <Swiper>
         {/* Welcome screen */}
         <View style={[styles.slide, { backgroundColor: colors.black, paddingBottom: padding.xxl }]}>
+          <Image
+            style={styles.backgroundImage}
+            source={require('../../../assets/gradient_ice.png')}
+          ></Image>
           <Text
             style={{
               color: colors.white,
@@ -41,6 +45,10 @@ export default class Onboarding extends Component {
         </View>
         {/* Rules screen */}
         <View style={[styles.slide, { backgroundColor: colors.black, paddingBottom: padding.xl }]}>
+          <Image
+            style={styles.backgroundImage}
+            source={require('../../../assets/gradient_ice.png')}
+          ></Image>
           <Text style={styles.h1}>
             <Text style={{ textDecorationLine: 'line-through' }}>Big effort</Text>
             {'\n'}Small wins &amp; consistency
@@ -94,5 +102,15 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     paddingTop: padding.md,
     paddingBottom: padding.xs,
+  },
+  backgroundImage: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    width: '100%',
+    height: undefined,
+    aspectRatio: 1,
   },
 });

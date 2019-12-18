@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
-import { Dimensions, Platform, ScrollView, StyleSheet, View } from 'react-native';
+import { Dimensions, ScrollView, StyleSheet, View } from 'react-native';
 import Button from '../../components/button';
-import { colors, padding } from '../../styles/base';
+import { colors } from '../../styles/base';
 
-export interface Props {}
-
-interface State {}
-
-// Detect screen width and height
 const { width, height } = Dimensions.get('window');
 
-export default class OnboardingScreens extends Component<Props, State> {
+export default class OnboardingScreens extends Component {
   static defaultProps = {
     horizontal: true,
     pagingEnabled: true,
@@ -24,6 +19,8 @@ export default class OnboardingScreens extends Component<Props, State> {
   };
 
   state = this.initState(this.props);
+  internals: any;
+  scrollView: any;
 
   initState(props) {
     const total = props.children ? props.children.length || 1 : 0;
@@ -39,8 +36,8 @@ export default class OnboardingScreens extends Component<Props, State> {
     };
 
     this.internals = {
-      isScrolling: false,
       offset,
+      isScrolling: false,
     };
 
     return state;
@@ -62,18 +59,18 @@ export default class OnboardingScreens extends Component<Props, State> {
 
   onScrollEndDrag = e => {
     const {
-        contentOffset: { x: newOffset },
-      } = e.nativeEvent,
-      { children } = this.props,
-      { index } = this.state,
-      { offset } = this.internals;
+      contentOffset: { x: newOffset },
+    } = e.nativeEvent;
+    const children = this.props;
+    const index = this.state;
+    const offset = this.internals;
 
     if (offset === newOffset && (index === 0 || index === children.length - 1)) {
       this.internals.isScrolling = false;
     }
   };
 
-  updateIndex = offset => {
+  updateIndex = (offset: number) => {
     const state = this.state;
     const diff = offset - this.internals.offset;
     const step = state.width;
@@ -135,7 +132,7 @@ export default class OnboardingScreens extends Component<Props, State> {
     const ActiveDot = <View style={[styles.dot, styles.activeDot]} />;
     const Dot = <View style={styles.dot} />;
 
-    let dots = [];
+    const dots = [];
 
     for (let key = 0; key < this.state.total; key++) {
       dots.push(
