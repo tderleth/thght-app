@@ -26,9 +26,9 @@ export default class OnboardingScreens extends Component<Props, State> {
   state = this.initState(this.props);
 
   initState(props) {
-    const total = props.children ? props.children.length || 1 : 0,
-      index = total > 1 ? Math.min(props.index, total - 1) : 0,
-      offset = width * index;
+    const total = props.children ? props.children.length || 1 : 0;
+    const index = total > 1 ? Math.min(props.index, total - 1) : 0;
+    const offset = width * index;
 
     const state = {
       total,
@@ -74,9 +74,9 @@ export default class OnboardingScreens extends Component<Props, State> {
   };
 
   updateIndex = offset => {
-    const state = this.state,
-      diff = offset - this.internals.offset,
-      step = state.width;
+    const state = this.state;
+    const diff = offset - this.internals.offset;
+    const step = state.width;
     let index = state.index;
 
     if (!diff) {
@@ -96,10 +96,10 @@ export default class OnboardingScreens extends Component<Props, State> {
       return;
     }
 
-    const state = this.state,
-      diff = this.state.index + 1,
-      x = diff * state.width,
-      y = 0;
+    const state = this.state;
+    const diff = this.state.index + 1;
+    const x = diff * state.width;
+    const y = 0;
 
     this.scrollView && this.scrollView.scrollTo({ x, y, animated: true });
 
@@ -132,8 +132,8 @@ export default class OnboardingScreens extends Component<Props, State> {
       return null;
     }
 
-    const ActiveDot = <View style={[styles.dot, styles.activeDot]} />,
-      Dot = <View style={styles.dot} />;
+    const ActiveDot = <View style={[styles.dot, styles.activeDot]} />;
+    const Dot = <View style={styles.dot} />;
 
     let dots = [];
 
@@ -183,8 +183,8 @@ export default class OnboardingScreens extends Component<Props, State> {
 const styles = StyleSheet.create({
   // Set width and height to the screen size
   fullScreen: {
-    width: width,
-    height: height,
+    width,
+    height,
   },
   // Main container
   container: {

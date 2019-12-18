@@ -12,9 +12,10 @@ export default class Onboarding extends Component {
           <Text
             style={{
               color: colors.white,
-              fontSize: 12,
+              fontSize: 13,
               paddingBottom: padding.sm,
               letterSpacing: 4,
+              textTransform: 'uppercase',
             }}
           >
             Welcome to
@@ -23,17 +24,34 @@ export default class Onboarding extends Component {
             style={{ width: 249, height: 95.77 }}
             source={require('../../../assets/logo_plain_white.png')}
           />
-          <Text style={{ color: colors.ice, paddingTop: padding.md, paddingBottom: padding.xs }}>
+          <Text
+            style={{
+              color: colors.ice,
+              paddingTop: padding.md,
+              paddingBottom: padding.xs,
+              fontSize: 17,
+            }}
+          >
             Minimalistic Journaling
           </Text>
-          <Text style={{ color: colors.white, textAlign: 'center' }}>
+          <Text style={styles.text}>
             Establish a habit of active reflection{'\n'}by capturing only one thought per day.
           </Text>
         </View>
         {/* Rules screen */}
         <View style={[styles.slide, { backgroundColor: '#000' }]}>
-          <Text style={styles.header}>Small effort + consistency</Text>
-          <Text style={styles.text}>Explanatory text</Text>
+          <Text style={styles.h1}>
+            <Text style={{ textDecorationLine: 'line-through' }}>Big effort</Text>
+            {'\n'}Small wins &amp; consistency
+          </Text>
+          <Text style={styles.text}>
+            In order to laser-focus on building up your journaling muscle, there are two
+            constraints.
+          </Text>
+          <Text style={styles.constraint}>1</Text>
+          <Text style={styles.text}>Only 1 thought per day</Text>
+          <Text style={styles.constraint}>2</Text>
+          <Text style={styles.text}>Max. 250 characters per thought</Text>
         </View>
       </Swiper>
     );
@@ -57,8 +75,22 @@ const styles = StyleSheet.create({
   // Text below header
   text: {
     color: '#FFFFFF',
-    fontSize: 18,
+    fontSize: 17,
     marginHorizontal: 40,
     textAlign: 'center',
+  },
+  h1: {
+    color: '#FFFFFF',
+    fontSize: 42,
+    fontWeight: '900',
+    textAlign: 'center',
+    paddingBottom: padding.sm,
+  },
+  constraint: {
+    color: colors.ice,
+    fontSize: 20,
+    fontWeight: '700',
+    paddingTop: padding.md,
+    paddingBottom: padding.xs,
   },
 });

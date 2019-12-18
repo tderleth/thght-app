@@ -11,7 +11,7 @@ interface State {}
 export default class Button extends Component<Props, State> {
   render({ onPress } = this.props) {
     return (
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity style={[{ width: '80%' }]} onPress={onPress}>
         <View style={styles.button}>
           <Text style={styles.text}>{this.props.text.toUpperCase()}</Text>
         </View>
@@ -21,17 +21,16 @@ export default class Button extends Component<Props, State> {
 }
 
 const styles = StyleSheet.create({
-  // Button container
   button: {
-    borderRadius: 50, // Rounded border
-    borderWidth: 2, // 2 point border width
-    borderColor: '#FFFFFF', // White colored border
-    paddingHorizontal: 50, // Horizontal padding
-    paddingVertical: 10, // Vertical padding
+    borderRadius: 50,
+    backgroundColor: '#FFFFFF',
+    paddingHorizontal: 50,
+    paddingVertical: 20,
+    alignItems: 'center',
   },
-  // Button text
   text: {
-    color: '#FFFFFF',
-    fontWeight: 'bold',
+    color: '#000',
+    fontWeight: '500',
+    fontSize: 16,
   },
 });
