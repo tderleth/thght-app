@@ -7,9 +7,7 @@ export interface IProps {
   onPress: () => void;
 }
 
-interface IState {}
-
-export default class Button extends Component<IProps, IState> {
+export default class Button extends Component<IProps> {
   render({ onPress } = this.props) {
     return (
       <TouchableOpacity style={[{ width: '80%' }]} onPress={onPress}>
