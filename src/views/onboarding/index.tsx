@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import Swiper from '../../components/swiper';
 import { colors, padding } from '../../styles/base';
 
