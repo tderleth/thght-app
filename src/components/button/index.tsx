@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { colors } from '../../styles/base';
 
-export interface Props {
+export interface IProps {
   text: string;
   onPress: () => void;
 }
 
-interface State {}
+interface IState {}
 
-export default class Button extends Component<Props, State> {
+export default class Button extends Component<IProps, IState> {
   render({ onPress } = this.props) {
     return (
       <TouchableOpacity style={[{ width: '80%' }]} onPress={onPress}>
