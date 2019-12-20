@@ -1,3 +1,5 @@
+/* tslint:disable */
+
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/styles/**/*.{js,jsx,ts,tsx}'],
