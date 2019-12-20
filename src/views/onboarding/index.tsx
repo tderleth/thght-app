@@ -68,20 +68,17 @@ export default class Onboarding extends Component {
 }
 
 const styles = StyleSheet.create({
-  // Slide styles
   slide: {
-    flex: 1, // Take up all screen
-    justifyContent: 'center', // Center vertically
-    alignItems: 'center', // Center horizontally
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  // Header styles
   header: {
     color: colors.white,
     fontSize: 42,
     fontWeight: 'bold',
     marginVertical: 15,
   },
-  // Text below header
   text: {
     color: colors.white,
     fontSize: 16,
