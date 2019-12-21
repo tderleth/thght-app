@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import CreateAccount from './onboarding/registration';
 
 const styles = StyleSheet.create({
   hello: {
@@ -13,6 +12,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => <CreateAccount />;
+const CreateAccount = () => (
+  <View style={styles.hello}>
+    <Text>thght</Text>
+  </View>
+);
 
-export default Main;
+export default CreateAccount;
