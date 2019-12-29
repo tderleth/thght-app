@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const Registration = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>This will be the login screen.</Text>
   </View>
 );
 
-export default Main;
+export default Login;

@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const CaptureThoughtDone = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>You will see this screen, if you have already captured a thought on that given day.</Text>
   </View>
 );
 
-export default Main;
+export default CaptureThoughtDone;

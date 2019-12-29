@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const RegistrationEmail = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>This will be the screen for the email registration option.</Text>
   </View>
 );
 
-export default Main;
+export default RegistrationEmail;

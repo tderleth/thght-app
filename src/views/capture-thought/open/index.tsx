@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const CaptureThought = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>This will be the registration screen.</Text>
   </View>
 );
 
-export default Main;
+export default CaptureThought;

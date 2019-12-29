@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const Reflect = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>This screen will be used to show you your captured thoughts.</Text>
   </View>
 );
 
-export default Main;
+export default Reflect;
