@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import RegistrationOption from '../main/onboarding/registration/option';
 
 const styles = StyleSheet.create({
   hello: {
     alignItems: 'center',
-    backgroundColor: 'powderblue',
     color: 'white',
     flex: 1,
     fontSize: 30,
@@ -12,10 +12,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
-  <View style={styles.hello}>
-    <Text>thght</Text>
-  </View>
-);
+const Main = () => <RegistrationOption />;
 
 export default Main;
