@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const SettingsPassword = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>This screen will be used to change your password.</Text>
   </View>
 );
 
-export default Main;
+export default SettingsPassword;

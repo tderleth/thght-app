@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const SettingsMain = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>This screen will be the main screen for settings.</Text>
   </View>
 );
 
-export default Main;
+export default SettingsMain;

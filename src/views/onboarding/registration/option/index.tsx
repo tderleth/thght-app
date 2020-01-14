@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const RegistrationOption = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>This will be the screen where you chose your prefered way to register.</Text>
   </View>
 );
 
-export default Main;
+export default RegistrationOption;

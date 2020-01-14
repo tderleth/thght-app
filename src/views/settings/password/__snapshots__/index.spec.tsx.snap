@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Main snapshot test 1`] = `
+exports[`SettingsPassword snapshot test 1`] = `
 <View
   style={
     Object {
@@ -13,7 +13,7 @@ exports[`Main snapshot test 1`] = `
   }
 >
   <Text>
-    This will be used for handling the navigation.
+    This screen will be used to change your password.
   </Text>
 </View>
 `;

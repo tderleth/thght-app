@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   },
 });
 
-const Main = () => (
+const SettingsReminder = () => (
   <View style={styles.hello}>
-    <Text>This will be used for handling the navigation.</Text>
+    <Text>This screen will be a settings screen to change your reminder.</Text>
   </View>
 );
 
-export default Main;
+export default SettingsReminder;
