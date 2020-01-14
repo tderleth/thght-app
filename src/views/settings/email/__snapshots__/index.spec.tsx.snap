@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingsEmail snapshot test 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "color": "white",
+      "flex": 1,
+      "fontSize": 30,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text>
+    This screen will be a settings screen to change your email.
+  </Text>
+</View>
+`;
