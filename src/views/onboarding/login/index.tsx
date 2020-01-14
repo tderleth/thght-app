@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Registration = () => (
+const Login = () => (
   <View style={styles.hello}>
     <Text>This will be the login screen.</Text>
   </View>
