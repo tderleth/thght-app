@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import AppleSignIn from '../../../../components/apple-sign-in';
 import { colors, padding } from '../../../../styles/base';
+import { Z_FIXED } from 'zlib';
 
 const styles = StyleSheet.create({
   hello: {
@@ -32,7 +33,11 @@ const styles = StyleSheet.create({
   terms: {
     fontSize: 13,
     lineHeight: 18,
+    color: colors.gray_lightest,
     textAlign: 'center',
+    position: 'absolute',
+    bottom: 0,
+    marginBottom: padding.xl,
   },
 });
 
