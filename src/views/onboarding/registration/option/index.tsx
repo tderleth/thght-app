@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import AppleSignIn from '../../../../components/apple-sign-in';
+import { colors, padding } from '../../../../styles/base';
 
 const styles = StyleSheet.create({
   hello: {
@@ -10,12 +11,42 @@ const styles = StyleSheet.create({
     fontSize: 30,
     justifyContent: 'center',
   },
+  backgroundImage: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    width: '100%',
+    height: undefined,
+    aspectRatio: 1,
+  },
+  h3: {
+    color: colors.white,
+    fontSize: 22,
+    lineHeight: 28,
+    fontWeight: '700',
+    textAlign: 'center',
+    paddingBottom: padding.sm,
+  },
+  terms: {
+    fontSize: 13,
+    lineHeight: 18,
+    textAlign: 'center',
+  },
 });
 
 const RegistrationOption = () => (
   <View style={styles.hello}>
-    <Text>This will be the screen where you chose your prefered way to register.</Text>
+    <Image
+      style={styles.backgroundImage}
+      source={require('../../../../../assets/gradient_ice.png')}
+    ></Image>
+    <Text style={styles.h3}>Sign up to track your progress and secure your thoughts</Text>
     <AppleSignIn />
+    <Text style={styles.terms}>
+      By signing up, you agree to thght’s{'\n'}Terms and Service and Privacy Policy.
+    </Text>
   </View>
 );
 
