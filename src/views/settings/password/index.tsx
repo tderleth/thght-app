@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SettingsPassword = () => (
+const SettingsPassword: React.SFC = (): JSX.Element => (
   <View style={styles.hello}>
     <Text>This screen will be used to change your password.</Text>
   </View>

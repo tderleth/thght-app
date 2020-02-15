@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const RegistrationEmail = () => (
+const RegistrationEmail: React.SFC = (): JSX.Element => (
   <View style={styles.hello}>
     <Text>This will be the screen for the email registration option.</Text>
   </View>

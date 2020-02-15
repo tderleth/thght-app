@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Login = () => (
+const Login: React.SFC = (): JSX.Element => (
   <View style={styles.hello}>
     <Text>This will be the login screen.</Text>
   </View>
