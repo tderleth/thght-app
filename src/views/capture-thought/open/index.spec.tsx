@@ -5,11 +5,13 @@ import CaptureThought from '.';
 
 describe('CaptureThought', () => {
   it('snapshot test', () => {
-    const tree = renderer.create(
-      <MemoryRouter>
-        <CaptureThought />
-      </MemoryRouter>,
-    );
+    const tree = renderer
+      .create(
+        <MemoryRouter>
+          <CaptureThought />
+        </MemoryRouter>,
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

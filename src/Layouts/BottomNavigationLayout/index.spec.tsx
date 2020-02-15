@@ -5,11 +5,13 @@ import BottomNavigationLayout from '.';
 
 describe('CaptureThought', () => {
   it('snapshot test', () => {
-    const tree = renderer.create(
-      <MemoryRouter>
-        <BottomNavigationLayout />
-      </MemoryRouter>,
-    );
+    const tree = renderer
+      .create(
+        <MemoryRouter>
+          <BottomNavigationLayout />
+        </MemoryRouter>,
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

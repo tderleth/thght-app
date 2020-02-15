@@ -5,11 +5,13 @@ import Reflect from '.';
 
 describe('Reflect', () => {
   it('snapshot test', () => {
-    const tree = renderer.create(
-      <MemoryRouter>
-        <Reflect />
-      </MemoryRouter>,
-    );
+    const tree = renderer
+      .create(
+        <MemoryRouter>
+          <Reflect />
+        </MemoryRouter>,
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
