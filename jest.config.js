@@ -4,12 +4,13 @@ module.exports = {
   coverageReporters: ['lcov'],
   preset: 'react-native',
   testEnvironment: 'node',
-  testPathIgnorePatterns: ['/dist/', '/node_modules/'],
   testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
+  testPathIgnorePatterns: ['/dist/', '/node_modules/'],
   transform: {
     '^.+\\.js$': '<rootDir>/node_modules/react-native/jest/preprocessor.js',
     '^.+\\.tsx?$': 'ts-jest',
   },
+  transformIgnorePatterns: ['node_modules/(?!react-native|react-router-native)/'],
   moduleFileExtensions: ['js', 'ts', 'tsx'],
   globals: {
     'ts-jest': {
