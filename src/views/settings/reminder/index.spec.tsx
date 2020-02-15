@@ -4,7 +4,7 @@ import SettingsReminder from '.';
 
 describe('SettingsReminder', () => {
   it('snapshot test', () => {
-    const tree = renderer.create(<SettingsReminder />).toJSON();
+    const tree = renderer.create(<SettingsReminder />);
     expect(tree).toMatchSnapshot();
   });
 });
