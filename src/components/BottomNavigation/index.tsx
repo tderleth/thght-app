@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-native';
 import { Route, routes } from '../../constants/routes';
@@ -38,6 +38,10 @@ const BottomNavigation: React.SFC = () => {
           <View key={route.link} style={styles.navigationItem}>
             <Link to={route.link} style={styles.link}>
               <View>
+                <Image
+                  style={{ width: 24, height: 24 }}
+                  source={require('../../../assets/icons/square_and_pencil.svg')}
+                />
                 <Text
                   style={useLocation().pathname === route.link ? styles.active : styles.nonActive}
                 >
