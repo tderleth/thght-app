@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SettingsMain = () => (
+const SettingsMain: React.SFC = (): JSX.Element => (
   <View style={styles.hello}>
     <Text>This screen will be the main screen for settings.</Text>
   </View>

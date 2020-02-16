@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const CaptureThoughtDone = () => (
+const CaptureThoughtDone: React.SFC = (): JSX.Element => (
   <View style={styles.hello}>
     <Text>You will see this screen, if you have already captured a thought on that given day.</Text>
   </View>

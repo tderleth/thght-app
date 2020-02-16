@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const RegistrationOption = () => (
+const RegistrationOption: React.SFC = (): JSX.Element => (
   <View style={styles.hello}>
     <Text>This will be the screen where you chose your prefered way to register.</Text>
   </View>
