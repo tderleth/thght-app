@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SettingsEmail = () => (
+const SettingsEmail: React.SFC = () => (
   <View style={styles.hello}>
     <Text>This screen will be a settings screen to change your email.</Text>
   </View>

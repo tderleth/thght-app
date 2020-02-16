@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SettingsReminder = () => (
+const SettingsReminder: React.SFC = (): JSX.Element => (
   <View style={styles.hello}>
     <Text>This screen will be a settings screen to change your reminder.</Text>
   </View>
