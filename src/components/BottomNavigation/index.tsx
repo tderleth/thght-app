@@ -3,13 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-native';
 import { Route, routes } from '../../constants/routes';
-import { colors, padding } from '../../styles/base';
+import { colors } from '../../styles/base';
 
 const styles = StyleSheet.create({
   navigation: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: 'grayLight',
+    backgroundColor: colors.grayLight,
   },
   navigationItem: {
     flex: 1,
@@ -22,10 +22,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   active: {
-    color: 'blue',
+    color: colors.ice,
   },
   nonActive: {
-    color: 'black',
+    color: colors.white,
   },
 });
 
@@ -37,11 +37,13 @@ const BottomNavigation: React.SFC = () => {
         .map((route: Route) => (
           <View key={route.link} style={styles.navigationItem}>
             <Link to={route.link} style={styles.link}>
-              <Text
-                style={useLocation().pathname === route.link ? styles.active : styles.nonActive}
-              >
-                {route.name}
-              </Text>
+              <View>
+                <Text
+                  style={useLocation().pathname === route.link ? styles.active : styles.nonActive}
+                >
+                  {route.name}
+                </Text>
+              </View>
             </Link>
           </View>
         ))}
