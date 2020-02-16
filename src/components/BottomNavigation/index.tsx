@@ -3,11 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-native';
 import { Route, routes } from '../../constants/routes';
+import { colors, padding } from '../../styles/base';
 
 const styles = StyleSheet.create({
   navigation: {
     flex: 1,
     flexDirection: 'row',
+    backgroundColor: 'grayLight',
   },
   navigationItem: {
     flex: 1,
